@@ -1,11 +1,10 @@
-# VulnerableMamaShop
+# Vulnerable Mama Shop
 A simple docker application for learning SQL Injection
 
 ## Introduction
 
 This is a simple docker application using Ubuntu 16.04 xenial, apache2 httpd (2.4), php (7.0) and mariadb (10), a classical LAMP stack, to
-create a vulnerable web application - Mama Shop. Mama Shop is insecurely coded and has a simple SQL injection flaw. It can be used to learn 
-and practice SQL injection. 
+create a vulnerable web application - Vulnerable Mama Shop. Vulnerable Mama Shop is insecurely coded and has a simple SQL injection flaw. It can be used to learn and practice SQL injection. 
 
 > The term "Mama Shop" means a small convenient store in Singapore. In the 70s to 90s, many of these small business store serve residents 
 > living nearby. As Singapore develops, these Mama shops gradually disappear, replaced by modern stores owned by big business chain. 
