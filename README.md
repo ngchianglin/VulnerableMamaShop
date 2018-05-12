@@ -47,6 +47,10 @@ See if you can dump out the list of customers in Mama Shop. To gain the most und
 do this systematically, step by step. Find out where the SQL vulnerability is and proceed to gather information on the database. 
 and finally dump out the customer list. 
 
+For a more detailed walkthrough, refer to the article [https://www.nighthour.sg/articles/2018/learning-sql-injection-using-vulnerable-mama-shop.html](https://www.nighthour.sg/articles/2018/learning-sql-injection-using-vulnerable-mama-shop.html)
+
+
+
 ## Source signature
 Gpg Signed commits are used for committing the source files. 
 

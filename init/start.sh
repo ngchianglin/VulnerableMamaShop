@@ -24,9 +24,11 @@ if [ $status -ne 0 ]; then
   exit $status
 fi
 
-echo "Mamashop started. You can access it at http://localhost:[port]"
-echo "[port] is where you expose the port for the docker container instance"
+echo "Vulnerable Mama shop started. You can access it at http://localhost:[port] or"
+echo "http://[ip address]:[port]"
+echo "[port] is where you have mapped the exposed port for the docker container instance"
 
 cd /dmonitor
 /root/gosu nobody /dmonitor/mon.sh
+
 
