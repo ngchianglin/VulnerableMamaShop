@@ -10,6 +10,10 @@ create a vulnerable web application - Vulnerable Mama Shop. Vulnerable Mama Shop
 > living nearby. As Singapore develops, these Mama shops gradually disappear, replaced by modern stores owned by big business chain. 
 > Vulnerable Mama shop has a SQL vulnerability. Can you find it ?
 
+## Disclaimer and Warning
+
+Computer misuse is a serious crime in Singapore and other countries, punishable by law. The source code and instructions provided here are for educational purposes only; meant to help IT defenders understand about SQL Injection vulnerabilities and better defend their systems and applications. It should not be misused for any other purposes. 
+
 ## Installation
 
 The application is packaged as a Docker application. Clone and download a copy for the application
@@ -49,6 +53,7 @@ Gpg Signed commits are used for committing the source files.
 > Look at the repository commits tab for the verified label for each commit, or refer to [https://www.nighthour.sg/git-gpg.html](https://www.nighthour.sg/git-gpg.html) for instructions on verifying the git commit. 
 >
 > A userful link on how to verify gpg signature is availabe here [https://github.com/blog/2144-gpg-signature-verification](https://github.com/blog/2144-gpg-signature-verification)
+
 
 
 

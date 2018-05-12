@@ -1,5 +1,11 @@
 /*
 *
+* Warning ! Computer misuse is a serious crime in Singapore and other countries, punishable by law.
+* The source code and instructions provided here are for educational purposes only; meant to help IT defenders 
+* understand about SQL Injection vulnerabilities and better defend their systems and applications. 
+* It should not be misused for any other purposes. 
+*
+*
 * This software is released under MIT LICENSE
 * This software contains a copy of Bootstrap version 4, bootstrap.min.css
 * Bootstrap is released under MIT LICENSE. Refer to the 
