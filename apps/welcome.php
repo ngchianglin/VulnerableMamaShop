@@ -57,7 +57,7 @@ header('Content-Type: text/html; charset=UTF-8');
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
-<title>Vulnerable Mama Shop</title>
+<title>Vulnerable Mama Shop - 易受攻击的妈妈商店</title>
 </head>
 <body>
 
@@ -81,14 +81,22 @@ header('Content-Type: text/html; charset=UTF-8');
   
   <div class="container-fluid">
         <h1>Vulnerable Mama Shop</h1>
-        <p>This is a vulnerable online Neighbourhood Mama Shop that can be used for practicing SQL injection. There are several items 
-        available for sale here. Check it out and have fun !</p> 
+        <p class="h5">易受攻击的妈妈商店</p>
+        <br>
+        <p class="lead">This is a vulnerable online Neighbourhood Mama Shop that can be used for practicing SQL injection. There are several items 
+        available for sale here.<br>Check it out and have fun !
+        </p>
+        <p>
+        这是个易受攻击的妈妈商店应用程序，可用来学习SQL注入。 祝您学习愉快 ！
+        </p>
   </div>
   <br>
   
   <div class="container border">
   
-   <p class="font-weight-bold">Select a Category to see items on sale. </p>
+   <p class="font-weight-bold">Select a Category to see items on sale.<br>
+   <small>选择产品类别</small>
+   </p>
    <p>  
    <form action="welcome.php" method="POST">
     <select name="catid">
@@ -137,3 +145,4 @@ header('Content-Type: text/html; charset=UTF-8');
   
 </body>
 </html>
+
