@@ -14,6 +14,8 @@ create a vulnerable web application - Vulnerable Mama Shop. Vulnerable Mama Shop
 
 Computer misuse is a serious crime in Singapore and other countries, punishable by law. The source code and instructions provided here are for educational purposes only; meant to help IT defenders understand about SQL Injection vulnerabilities and better defend their systems and applications. It should not be misused for any other purposes. 
 
+Vulnerable Mama Shop(VMS) is an insecure application and should not be exposed on the internet or an internal network. Doing so can result in a system or network compromise. It should only be used in an isolated test lab environment that is meant for security testing and learning. VMS is released under the MIT license. Read the license, the author is not responsible for any damage direct or indirect that arise from using VMS. Use VMS solely at your own risk !
+
 ## Installation
 
 The application is packaged as a Docker application. Clone and download a copy for the application
