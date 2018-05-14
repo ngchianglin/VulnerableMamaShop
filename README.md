@@ -34,6 +34,7 @@ To run it interactively
     docker run -it --rm -p 8000:80 mamashop
 
 This will make Mamashop available at http://localhost:8000 or http://[ip address]:8000
+
 Do not expose Vulnerable Mama Shop to the internet, it is an insecure application and can lead to a system or network compromise. 
 Use it in an isolated test lab environment meant for security testing and learning. 
  
