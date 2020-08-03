@@ -6,7 +6,8 @@ RUN apt-get update && \
     libapache2-mod-fastcgi \
     php7.0-fpm \
     mariadb-server \
-    php-mysql &&\
+    php-mysql \
+    gosu &&\
     a2enmod proxy proxy_fcgi
 
 COPY 000-default.conf /etc/apache2/sites-enabled
@@ -18,6 +19,9 @@ RUN mkdir dmonitor &&\
 COPY init/mon.sh /dmonitor
 
 COPY apps /var/www/html
+
+RUN chmod 755 /dmonitor/mon.sh &&\
+    chmod 644 /var/www/html/*
 
 EXPOSE 80/tcp
 
