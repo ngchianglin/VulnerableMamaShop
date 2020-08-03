@@ -29,6 +29,6 @@ echo "http://[ip address]:[port]"
 echo "[port] is where you have mapped the exposed port for the docker container instance"
 
 cd /dmonitor
-/root/gosu nobody /dmonitor/mon.sh
+gosu nobody /dmonitor/mon.sh
 
 
