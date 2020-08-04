@@ -8,6 +8,7 @@ RUN apt-get update && \
     mariadb-server \
     php-mysql \
     gosu &&\
+    a2dismod -f deflate &&\
     a2enmod proxy proxy_fcgi
 
 COPY 000-default.conf /etc/apache2/sites-enabled
