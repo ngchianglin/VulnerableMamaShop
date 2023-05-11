@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+<title>Logfather Swag Shop - You need more logfather in your life</title>
+</head>
+<body>
+
+  <nav class="navbar navbar-dark navbar-expand-sm bg-dark">
+      <div>
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="welcome.php">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.php">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+         </ul>
+      </div>
+    </nav>  
+  
+<div class="jumbotron text-center">
+
+<h1 class="display-4">Logfather Swag Shop<br>
+<small>You need more logfather in your life</small></h1>
+<hr class="my-4">
+
+<div class="container">
+ <p class="lead text-left">
+  So, you've built yourself a sweet little database, as pristine as a fresh install of Windows '98. It hums along, handling queries like a pro, secure as a dial-up connection in a land of fiber optics. But, beware, my friends, for there are wolves in these woods.
+  <p class="lead text-left">
+  Your app is running a simple login form. A harmless query, right?
+  <pre>SELECT * FROM Users WHERE Username='[username]' AND Password='[password]';</pre>
+  <p class="lead text-left">
+  But then, in saunters our bad actor, as slick as Zero Cool on a fresh keyboard. Instead of a simple username, they slide in a sneaky little snippet: <pre>' OR '1'='1</pre>
+  <p class="lead text-left">
+  Suddenly, your innocent query morphs into this monstrosity:
+  <pre>SELECT * FROM Users WHERE Username='' OR '1'='1' AND Password='[password]';</pre> 
+  <p class="lead text-left">
+  And now, the game is up. '1' is always '1', just as the Logfather always sees the world in regex. Your query spills its guts, returning every user, and our digital villain is logged in as the first user in the list, usually the admin. Your system's been pwned, dude. It's like leaving your backdoor wide open in the middle of DEF CON.
+  <p class="lead text-left">
+  So, what's the game plan, hotshot? Simple - don't trust user input. Treat it like it's got the same cooties as a chain email from the early 2000s. Sanitize that stuff, use prepared statements, and keep your database locked down tighter than your embarrassing Myspace account.
+  <p class="lead text-left">
+  In the end, we all want to be the Logfather of our data: unruffled, insightful, and always catching the bugs in the matrix. Just remember - the keyboard is mightier than the sword!
+
+<p class="text-left"> 
+ 这是个有SQL注入漏洞的 php 应用程序。可用来学习SQL注入。 妈妈商店是新加坡的一个词汇，指邻家小商店。 70s 到 90s 年代有很多间。 但随着新加坡的发展， 大规模的连锁店进入市场， 妈妈商店渐渐消失。 这有个漏洞， 您可找到吗 ？
+</p>
+ 
+</div> 
+<br><br><br>
+<div class="container">
+<p class="text-center h5">
+© 2018 Ng Chiang Lin, 强林 <br>
+<a href="https://www.nighthour.sg" target="_blank">www.nighthour.sg</a>
+</p>
+</div>  
+ 
+</div>
+
+
+  
+</body>
+</html>
+
