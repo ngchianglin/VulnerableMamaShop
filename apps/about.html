@@ -29,9 +29,9 @@
   background-color: #f1f1f1;
 }
 
-code {
+.entry-content pre {
  display:block,inline-block; 
- font-family:"Lucida Console", Monaco, monospace ;
+ font-family:Monaco, "Lucida Console", monospace ;
  letter-spacing: -0.2em;
  line-height: 0.8em;
  text-shadow: 0 0 5px rgba(100,100,100,0.5);
@@ -71,7 +71,7 @@ code {
   Your app is running a simple login form. A harmless query, right?
   <pre>SELECT * FROM Users WHERE Username='[username]' AND Password='[password]';</pre>
   <p class="lead text-left">
-  But then, in saunters our bad actor, as slick as Zero Cool on a fresh keyboard. Instead of a simple username, they slide in a sneaky little snippet: <pre>' OR '1'='1</pre>
+  But then, in saunters our bad actor, as slick as Zero Cool on a fresh keyboard. Instead of a simple username, they slide in a sneaky little snippet: <code>' OR '1'='1</code>
   <p class="lead text-left">
   Suddenly, your innocent query morphs into this monstrosity:
   <pre>SELECT * FROM Users WHERE Username='' OR '1'='1' AND Password='[password]';</pre> 
@@ -89,10 +89,10 @@ code {
   Is there life without laugh and love?  Pro tips further down. 
 
  <pre>
-  *****,,*********************************************************************************************
+*****,,*********************************************************************************************
 *****,*,********************************************************************************************
-*************************************************////***********************************************
-*****************************************/////////////////*****,,,**********************************
+******flag***************************************////***********************************************
+******L0gF4th3rs33sYou*******************/////////////////*****,,,**********************************
 ***********************************/////////////////////////*****,,,,,,,****************************
 *******************************//////(((((((///(/////////////********,,,...,************************
 ****************************////((((((((((((((((///////////////********,,,....**********************
@@ -140,16 +140,17 @@ code {
 .........  .............,............,/////////**,,*,,,,,,,.....,.....         . .....    ./////////
   ......... ..............................,//////***,,,,,,,,........             ......       ./////
  </pre>
-
+ <p class="lead text-left">
 How to SQL injection like a pro:
 
-<li>
-  <ol>Install a tool.  As a logfather disciple, I recommend Hackbar Chrome/Firefox extension. </ol>
-  <ol>Use that tool.  Go to the 'Home Page' and hit <pre>load page</pre> in hackbar</ol>
-  <ol>Find the SQL being ran.  Probably says <pre>catid=1000</pre></ol>
-  <ol>Try escaping it.  Just add a single quote to that and hit 'execute', e.g. <pre>catid=1000'</pre></ol>
-  <ol>Build some more sql for the right language (find some errors)</ol>
-  <ol>Here are the tables - now I'm spoonfeeding you, Padawan: 
+<p class="lead text-left">
+<ol>
+  <li>Install a tool.  As a logfather disciple, I recommend Hackbar Chrome/Firefox extension. </li>
+  <li>Use that tool.  Go to the 'Home Page' and hit <code>load page</code> in hackbar</li>
+  <li>Find the SQL being ran.  Probably says <code>catid=1000</code></li>
+  <li>Try escaping it.  Just add a single quote to that and hit 'execute', e.g. <code>catid=1000'</code></li>
+  <li>Build some more sql for the right language (find some errors)</li>
+  <li>Here are the tables - now I'm spoonfeeding you, Padawan: 
     <pre>
       Table: users
       +---------------+--------------+
@@ -174,9 +175,9 @@ How to SQL injection like a pro:
       | catid       | int(11)      |
       +-------------+--------------+
       
-    </pre> </ol>
-</li>
-
+    </pre> </li>
+  </ol>
+<p class="lead text-left">
 If you need the very last piece, you'll just have to try a bit harder.  Be the next logfather.
 
 </div>
