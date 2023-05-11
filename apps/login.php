@@ -98,6 +98,9 @@ if($validate === false )
 <small>We take security seriously. Please don't sue us</small>
 </h3>
  
+<div><p>For real, though.  There are no weaknesses to give you a flag on this page.  Go find a username.  It can be done.  I believe in you.  The logfather believes in you.  Be the hero the hacker world needs you to be.  Just think, if you don't get paid enough, ransomware crews are always hiring for their next fall person. 
+</div>
+
 <form action="login.php" method="POST" class="w-50">
   <div class="form-group">
     <label>Email address</label>
@@ -121,6 +124,7 @@ else
  
  <?php 
  echo "Welcome " . $result['firstname'] . " " . $result['lastname'] ; 
+ echo "Have a flag you scoundrel:  ThisWasTooHard"
  ?>
  
  </p>

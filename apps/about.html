@@ -1,50 +1,45 @@
 <!DOCTYPE html>
-
 <html>
 <head>
-  <style>
-    .collapsible {
-      background-color: #777;
-      color: white;
-      cursor: pointer;
-      padding: 18px;
-      width: 100%;
-      border: none;
-      text-align: left;
-      outline: none;
-      font-size: 15px;
-    }
-    
-    .active, .collapsible:hover {
-      background-color: #555;
-    }
-    
-    .collapsible:after {
-      content: '\002B';
-      color: white;
-      font-weight: bold;
-      float: right;
-      margin-left: 5px;
-    }
-    
-    .active:after {
-      content: "\2212";
-    }
-    
-    .content {
-      padding: 0 18px;
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.2s ease-out;
-      background-color: #f1f1f1;
-    }
-    </style>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
-<title>Logfather Swag Shop - You need more logfather in your life</title>
+
+<style>
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+code {
+ display:block,inline-block; 
+ font-family:"Lucida Console", Monaco, monospace ;
+ letter-spacing: -0.2em;
+ line-height: 0.8em;
+ text-shadow: 0 0 5px rgba(100,100,100,0.5);
+}
+</style>
+
 </head>
+<body>
 <body>
 
   <nav class="navbar navbar-dark navbar-expand-sm bg-dark">
@@ -91,6 +86,8 @@
  
 <button class="collapsible">Do you want to see the LogFather?</button>
 <div class="content">
+  Is there life without laugh and love?  Pro tips further down. 
+
  <pre>
   *****,,*********************************************************************************************
 *****,*,********************************************************************************************
@@ -144,28 +141,64 @@
   ......... ..............................,//////***,,,,,,,,........             ......       ./////
  </pre>
 
- Is there life without laugh and love?
+How to SQL injection like a pro:
+
+<li>
+  <ol>Install a tool.  As a logfather disciple, I recommend Hackbar Chrome/Firefox extension. </ol>
+  <ol>Use that tool.  Go to the 'Home Page' and hit <pre>load page</pre> in hackbar</ol>
+  <ol>Find the SQL being ran.  Probably says <pre>catid=1000</pre></ol>
+  <ol>Try escaping it.  Just add a single quote to that and hit 'execute', e.g. <pre>catid=1000'</pre></ol>
+  <ol>Build some more sql for the right language (find some errors)</ol>
+  <ol>Here are the tables - now I'm spoonfeeding you, Padawan: 
+    <pre>
+      Table: users
+      +---------------+--------------+
+      | Column        | Type         |
+      +---------------+--------------+
+      | userid        | int(11)      |
+      | firstname     | varchar(255) |
+      | lastname      | varchar(255) |
+      | serial_number | varchar(64)  |
+      | email         | varchar(255) |
+      | password      | varchar(128) |
+      +---------------+--------------+
+      
+      Table: products
+      +-------------+--------------+
+      | Column      | Type         |
+      +-------------+--------------+
+      | productid   | int(11)      |
+      | name        | varchar(255) |
+      | description | mediumtext   |
+      | price       | decimal(6,2) |
+      | catid       | int(11)      |
+      +-------------+--------------+
+      
+    </pre> </ol>
+</li>
+
+If you need the very last piece, you'll just have to try a bit harder.  Be the next logfather.
+
 </div>
 
 </div>
 
 <script>
-  var coll = document.getElementsByClassName("collapsible");
-  var i;
-  
-  for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var content = this.nextElementSibling;
-      if (content.style.display === "block") {
-        content.style.display = "none";
-      } else {
-        content.style.display = "block";
-      }
-    });
-  }
-  </script>
-  
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
 </body>
 </html>
-
