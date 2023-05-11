@@ -12,10 +12,15 @@ RUN apt-get update && \
     a2enmod proxy proxy_fcgi
 
 COPY 000-default.conf /etc/apache2/sites-enabled
+
+# Real dirty hack to make Apache logs to docker out
+RUN ln -sf /proc/self/fd/1 /var/log/apache2/access.log && \
+    ln -sf /proc/self/fd/1 /var/log/apache2/error.log
+
 COPY init /root/
 
-RUN mkdir dmonitor &&\
-    chmod 755 dmonitor 
+RUN mkdir /dmonitor &&\
+    chmod 755 /dmonitor 
     
 COPY init/mon.sh /dmonitor
 
@@ -26,5 +31,4 @@ RUN chmod 755 /dmonitor/mon.sh &&\
 
 EXPOSE 80/tcp
 
-#CMD ["/bin/bash" , "-i"]
 ENTRYPOINT ["/bin/bash", "/root/start.sh"]

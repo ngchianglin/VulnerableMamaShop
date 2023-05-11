@@ -25,7 +25,7 @@ fi
 
 echo "The Log Father swag shop is now open. You can access it at http://localhost:[port] or"
 echo "http://[ip address]:[port]"
-#echo "[port] is where you have mapped the exposed port for the docker container instance"
+echo "[port] is where you have mapped the exposed port for the docker container instance"
 
-cd /dmonitor
+#cd /dmonitor
 gosu nobody /dmonitor/mon.sh

