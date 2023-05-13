@@ -36,7 +36,8 @@ RUN chmod 644 /var/www/html/*
 
 EXPOSE 80/tcp
 
-RUN ["/bin/bash", "/root/start.sh"]
+CMD ["/bin/bash", "/root/start.sh"]
 CMD ["/usr/sbin/apache2ctl", "-DFOREGROUND"]
+CMD ["/bin/bash", "/root/mon.sh"]
 
 #ENTRYPOINT ["/usr/sbin/apache2", "-D",  "FOREGROUND"]
