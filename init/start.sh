@@ -1,4 +1,5 @@
 #!/bin/bash
+
 /etc/init.d/mysql start
 status=$?
 if [ $status -ne 0 ]; then
@@ -17,6 +18,4 @@ if [ $status -ne 0 ]; then
   exit $status
 fi
 
-#cd /dmonitor
-#gosu nobody /dmonitor/mon.sh
-#tail -f /var/log/apache2/*.log
+/usr/sbin/apache2 -D FOREGROUND
